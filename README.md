@@ -1,6 +1,6 @@
 # Welcome 🤠
 
-# Aliases
+### staff
 ```
 echo "
  
