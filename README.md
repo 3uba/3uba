@@ -1,42 +1,31 @@
-# Hi, I'm 3uba 👋
+# `whoami`
 
-Backend developer, learning offensive security on the side. I like building
-small, focused tools that do one thing well, usually in Python, Go, or
-TypeScript.
+Some dev from the internet. Writes tools nobody asked for, then uses them anyway.
 
-### 🔧 What I'm working on
+Bio generators are for people with a personality to summarize, so instead here's
+a flag. Decode it and you've technically done more research on me than most
+recruiters.
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [**trex**](https://github.com/3uba/trex) | Send raw HTTP requests from a text file, with ffuf-style fuzzing and regex match/filter/extract. Burp Repeater + Intruder for the terminal. | Python |
-| [**redeye**](https://github.com/3uba/redeye) | Screenshot and recon web targets into one self-contained HTML report. Native on Apple Silicon, no Docker or Selenium. | Python |
-| [**skyvern-ui**](https://github.com/3uba/skyvern-ui) | Self-hosted web UI for the Skyvern browser-automation platform, adding auth, RBAC, and a secure API proxy. | Next.js / TypeScript |
-| [**deploytool**](https://github.com/3uba/deploytool) | Single-binary CLI for deploying Git projects to a Linux server, with versioned backups and Docker builds. | Go |
+```
+63444177575874314d563878656c387a5344673066513d3d
+```
 
-### 🧰 Tech I reach for
+<details>
+<summary>can't crack it? 🫠 (it's not even hard, come on)</summary>
 
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=nextdotjs&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black)
+Three layers. Onion-style. Try not to cry.
 
-### 🛡️ Into
+```bash
+echo '63444177575874314d563878656c387a5344673066513d3d' \
+  | xxd -r -p \                    # layer 1: it's hex. shocking.
+  | base64 -d \                    # layer 2: base64, obviously
+  | tr 'A-Za-z' 'N-ZA-Mn-za-m'     # layer 3: ROT13, the final boss
+```
 
-Web security, recon and pentest tooling, CTFs, and self-hosting. Most of my
-public repos are the tools I wanted while learning.
+If that was too much effort, the answer is: you should've just said hi.
+
+</details>
 
 ---
 
-<details>
-<summary>🐳 A few docker aliases I keep in my <code>.bashrc</code></summary>
-
-```bash
-alias dps='docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
-alias dpp='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
-alias de='f() { docker exec -it "$@" bash; unset -f f; }; f'
-alias deu='f() { docker exec -u root -it "$@" bash; unset -f f; }; f'
-```
-
-</details>
+<sub>warning: repos may contain traces of "it works on my machine" and 3am commits</sub>
