@@ -1,6 +1,3 @@
-# Welcome 🤠
-
-### staff
 ```
 echo "
  
